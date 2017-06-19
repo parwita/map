@@ -15,8 +15,8 @@ class CreateMapsTable extends Migration
     {
         Schema::create('maps', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps('created_at')->nullable();
-            $table->timestamps('updated_at')->nullable();
+            $table->timestamps('created_at');
+            $table->timestamps('updated_at');
             $table->integer('no_tower');
             $table->decimal('longitude');
             $table->decimal('latitude');
