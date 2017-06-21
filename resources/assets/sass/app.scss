@@ -12,9 +12,9 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 // Leaflet
-@import url("https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css");
-@import url("https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css");
-@import url("https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css");
+@import url("https://unpkg.com/leaflet@1.0.3/dist/leaflet.css");
+@import url("https://unpkg.com/leaflet.markercluster@1.0.6/dist/MarkerCluster.css");
+@import url("https://unpkg.com/leaflet.markercluster@1.0.6/dist/MarkerCluster.Default.css");
 @import url("https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css");
 @import "leaflet";
 
