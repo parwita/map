@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
+Route::get('/', 'MapController@show');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
