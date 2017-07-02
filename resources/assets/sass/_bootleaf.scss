@@ -29,6 +29,7 @@ input[type="radio"], input[type="checkbox"] {
   left: 50%;
   margin: -10px 0 0 -110px;
   z-index: 20001;
+  /*display: none;*/
 }
 #features {
   margin: 0px;
@@ -83,6 +84,17 @@ input[type="radio"], input[type="checkbox"] {
 }
 .table {
   margin-bottom: 0px;
+}
+.navbar-inverse {
+  background-color: #3097d1;
+  border-color: #2579a9;
+  .navbar-nav {
+    li {
+      a {
+        color: #f5f5f5;
+      }
+    }
+  }
 }
 .navbar .navbar-brand {
   font-weight: bold;

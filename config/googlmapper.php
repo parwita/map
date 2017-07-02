@@ -163,7 +163,7 @@ return array(
         | Display a custom icon for markers. (Link to an image)
         |
         */
-        'icon' => 'http://findicons.com/files/icons/2711/free_icons_for_windows8_metro/128/radio_tower.png',
+        'icon' => 'img/pin-tower.png',
 
         /*
         |--------------------------------------------------------------------------
