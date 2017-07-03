@@ -1,4 +1,5 @@
 var map, featureList, boroughSearch = [], theaterSearch = [], museumSearch = [];
+var $modal = $('#loadModal');
 
 $("#about-btn").click(function() {
   $("#aboutModal").modal("show");
@@ -33,6 +34,11 @@ function webLoading() {
   $("#loading").fadeOut();
 }
 
-function clickMarker(){
-  $('#aboutModal').modal('toggle');
+function clickMarker(url){
+  // $('#featureModal').modal('toggle');
+  // var ids = id;
+  // alert(ids);
+  $modal.load(url, function () {
+      $modal.modal({show: true});
+  });
 }

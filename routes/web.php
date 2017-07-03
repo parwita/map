@@ -17,6 +17,8 @@
 
 Route::get('/', 'MapController@show');
 
+Route::get('quick-view', 'MapController@getQuickView');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
