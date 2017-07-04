@@ -3,7 +3,6 @@
     <div class="navbar-header">
       <div class="navbar-icon-container">
         <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
-        <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white"></i></a>
       </div>
       <a class="navbar-brand" href="#">{{Voyager::setting('admin_title')}}</a>
     </div>

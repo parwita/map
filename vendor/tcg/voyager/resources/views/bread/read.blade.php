@@ -38,7 +38,13 @@
                         </div>
 
                         <div class="panel-body" style="padding-top:0;">
-                            @if($row->type == "image")
+                            @if($row->type == "multiple_images")
+                                @php $valor = json_decode($dataTypeContent->{$row->field}); @endphp
+                                @foreach($valor as $item)
+                                    <img class="img-responsive"
+                                     src="{{Voyager::image($item)}}">
+                                @endforeach
+                            @elseif($row->type == "image")
                                 <img class="img-responsive"
                                      src="{{ Voyager::image($dataTypeContent->{$row->field}) }}">
                             @elseif($row->type == 'select_dropdown' && property_exists($rowDetails, 'options') &&

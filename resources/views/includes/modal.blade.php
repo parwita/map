@@ -1,16 +1,28 @@
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
-            </button>
-            <h4 class="modal-title" id="myModalLabel">{{ $mark->no_tower }}</h4>
+            <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+            <h3 class="modal-title"><strong>{{ $mark->no_tower }}</strong></h3>
         </div>
         <div class="modal-body">
-            <h4>Name: {{ $mark->nama_pelahan }}</h4>
-            <h4>Status: {{ $mark->status }}</h4>
+            <div class="row">
+                <div class="col-md-6 product_img">
+                    <!-- <img src="http://img.bbystatic.com/BestBuy_US/images/products/5613/5613060_sd.jpg" class="img-responsive"> -->
+                </div>
+                <div class="col-md-6 product_content">
+                    <p>No. Tower : <strong>{{ $mark->no_tower }}</strong></p>
+                    <p>Status : <strong>{{ $mark->status }}</strong></p>
+                    <p>Nama Pelahan : <strong>{{ $mark->nama_pelahan }}</strong></p>
+                    <p>Tindak Lanjut :</p>
+                    <p style="text-indent: 30px;"><strong>{{ $mark->tindak_lanjut }}</strong></p>
+                    <p>Masalah :</p>
+                    <p style="text-indent: 30px;"><strong>{{ $mark->masalah }}</strong></p>
+                    <p>Saran Solusi :</p>
+                    <p style="text-indent: 30px;"><strong>{{ $mark->saran_solusi }}</strong></p>
+                    <div class="space-ten"></div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+
     </div>
 </div>
