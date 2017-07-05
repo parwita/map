@@ -159,6 +159,13 @@ input[type="radio"], input[type="checkbox"] {
   line-height: 34px;
   text-align: center;
 }
+
+.carousel-control.right{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.carousel-control.left{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
 @media (max-width: 992px) {
   .navbar .navbar-brand {
     font-size: 18px;

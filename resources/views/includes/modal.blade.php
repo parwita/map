@@ -7,7 +7,35 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-md-6 product_img">
-                    <!-- <img src="http://img.bbystatic.com/BestBuy_US/images/products/5613/5613060_sd.jpg" class="img-responsive"> -->
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            @php $valor = json_decode($mark->foto); $i=0; @endphp
+                            @foreach($valor as $item)
+                                @if($i==0)
+                                <div class="item active">
+                                @else
+                                <div class="item">
+                                @endif
+                                  <img src="{{Voyager::image($item)}}" alt="">
+                                  <div class="carousel-caption">
+                                    ...
+                                  </div>
+                                </div>
+                                @php $i++; @endphp
+                            @endforeach                            
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-md-6 product_content">
                     <p>No. Tower : <strong>{{ $mark->no_tower }}</strong></p>
